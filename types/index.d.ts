@@ -8,13 +8,13 @@ declare type SearchParamProps = {
 // ========================================
 
 declare type SignUpParams = {
-  firstName?: string;
-  lastName?: string;
-  address1?: string;
-  city?: string;
-  state?: string;
-  postalCode?: string;
-  dateOfBirth?: string;
+  firstName: string;
+  lastName: string;
+  address1: string;
+  city: string;
+  state: string;
+  pinCode: string;
+  dateOfBirth: string;
   email: string;
   password: string;
 };
@@ -36,7 +36,7 @@ declare type User = {
   address1: string;
   city: string;
   state: string;
-  postalCode: string;
+  pinCode: string;
   dateOfBirth: string;
 };
 
@@ -130,7 +130,7 @@ declare type NewDwollaCustomerParams = {
   address1: string;
   city: string;
   state: string;
-  postalCode: string;
+  pinCode: string;
   dateOfBirth: string;
 };
 
