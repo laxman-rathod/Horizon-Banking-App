@@ -2,7 +2,6 @@ import { transactionCategoryStyles } from "@/constants";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
