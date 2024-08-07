@@ -13,7 +13,8 @@ declare type SignUpParams = {
   address1: string;
   city: string;
   state: string;
-  pinCode: string;
+  postalCode: string;
+  ssn: string;
   dateOfBirth: string;
   email: string;
   password: string;
@@ -36,7 +37,8 @@ declare type User = {
   address1: string;
   city: string;
   state: string;
-  pinCode: string;
+  postalCode: string;
+  ssn: string;
   dateOfBirth: string;
 };
 
@@ -130,7 +132,8 @@ declare type NewDwollaCustomerParams = {
   address1: string;
   city: string;
   state: string;
-  pinCode: string;
+  postalCode: string;
+  ssn: string;
   dateOfBirth: string;
 };
 
@@ -301,8 +304,8 @@ declare interface getUserInfoProps {
 }
 
 declare interface exchangePublicTokenProps {
-  publicToken: string;
   user: User;
+  publicToken: string;
 }
 
 declare interface createBankAccountProps {

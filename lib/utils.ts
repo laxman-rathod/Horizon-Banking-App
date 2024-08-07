@@ -67,9 +67,9 @@ export const formatDateTime = (dateString: Date) => {
 };
 
 export function formatAmount(amount: number): string {
-  const formatter = new Intl.NumberFormat("en-IN", {
+  const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "INR",
+    currency: "USD",
     minimumFractionDigits: 2,
   });
 
@@ -203,8 +203,18 @@ export const authFormSchema = (type: string) =>
     address1: type === "sign-in" ? z.string().optional() : z.string().max(50),
     city: type === "sign-in" ? z.string().optional() : z.string().max(50),
     state:
-      type === "sign-in" ? z.string().optional() : z.string().min(2).max(50),
-    pinCode: type === "sign-in" ? z.string().optional() : z.string().min(6),
+      type === "sign-in" ? z.string().optional() : z.string().min(2).max(2),
+    postalCode:
+      type === "sign-in"
+        ? z.string().optional()
+        : z.string().regex(/^\d{5}(-\d{4})?$/, "Invalid postal code format"),
+    ssn:
+      type === "sign-in"
+        ? z.string().optional()
+        : z
+            .string()
+            .length(9)
+            .regex(/^\d{9}$/, "SSN must be 9 digits"),
     dateOfBirth: type === "sign-in" ? z.string().optional() : z.string().min(3),
 
     // Sign in
