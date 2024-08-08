@@ -93,7 +93,7 @@ const AuthForm = ({ type }: { type: string }) => {
             {user ? "Link Account" : type === "sign-in" ? "Sign In" : "Sign Up"}
             <p className="text-16 font-normal text-gray-600">
               {user
-                ? "Link your accoutn to get started"
+                ? "Link your account to get started"
                 : "Please enter your details"}
             </p>
           </h1>

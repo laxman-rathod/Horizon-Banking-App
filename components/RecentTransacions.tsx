@@ -56,7 +56,7 @@ const RecentTransacions = ({
               account={account}
               appwriteItemId={appwriteItemId}
             />
-            <TransactionsTable transactions={transactions} />
+            <TransactionsTable transactions={currentTransactions} />
           </TabsContent>
         ))}
       </Tabs>
