@@ -90,6 +90,7 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
         <PaymentTransferCustomInputForm
           name="name"
           label=" Transfer Note (Optional)"
+          type="textarea"
           control={form.control}
           accounts={accounts}
           setValue={form.setValue}

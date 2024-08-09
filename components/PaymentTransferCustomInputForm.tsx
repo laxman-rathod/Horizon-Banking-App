@@ -49,7 +49,9 @@ const FormInput = ({ type, field, placeholder }: FromInputProps) => {
       <Input placeholder={placeholder} className="input-class" {...field} />
     );
   } else {
-    <Textarea placeholder={placeholder} className="input-class" {...field} />;
+    return (
+      <Textarea className="input-class" placeholder={placeholder} {...field} />
+    );
   }
 };
 
@@ -88,7 +90,7 @@ const PaymentTransferCustomInputForm = ({
                   />
                 ) : (
                   <FormInput
-                    type="input"
+                    type={type || "input"}
                     field={field}
                     placeholder={placeholder}
                   />

@@ -38,8 +38,6 @@ const AuthForm = ({ type }: { type: string }) => {
     // ✅ This will be type-safe and validated.
     setIsLoading(true);
     try {
-      // TODO: Sign up with Appwrite & create an plaid token
-
       if (type === "sign-up") {
         const userData = {
           firstName: data.firstName!,
