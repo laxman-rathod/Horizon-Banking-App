@@ -9,7 +9,7 @@
     <img src="https://shields.io/badge/react-0F172A?logo=react&style=for-the-badge" alt="reactdotjs" />
     <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
     <img src="https://img.shields.io/badge/tailwindcss-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=Appwrite&logoColor=black" alt="appwrite" />
+    <img src="https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=Appwrite&logoColor=white" alt="appwrite" />
   </div>
   <h3 align="center">Horizon - A Fintech Bank Application</h3>
 
@@ -154,10 +154,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 To contribute:
 
-Fork the repository
-Create your feature branch (`git checkout -b feature/your-feature`)
-Commit your changes (`git commit -m 'feat: add your feature'`)
-Push to the branch (`git push origin feature/your-feature`)
+Fork the repository </br>
+Create your feature branch (`git checkout -b feature/your-feature`) </br>
+Commit your changes (`git commit -m 'feat: add your feature'`) </br>
+Push to the branch (`git push origin feature/your-feature`) </br>
 Open a pull request
 
 ## 📄 License
