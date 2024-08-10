@@ -57,7 +57,9 @@ const RecentTransacions = ({
               account={account}
               appwriteItemId={appwriteItemId}
             />
+            <div>
               <TransactionsTable transactions={currentTransactions} />
+            </div>
             {totalPages > 1 && (
               <div className="my-4 w-full">
                 <Pagination totalPages={totalPages} page={page} />

@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <br />
+    <a href="https://miro-clone-w.vercel.app" target="_blank">
+      <img src="" alt="Project Banner">
+    </a>
+  <br />
+  <div>
+    <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="nextdotjs" />
+    <img src="https://shields.io/badge/react-0F172A?logo=react&style=for-the-badge" alt="reactdotjs" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
+    <img src="https://img.shields.io/badge/tailwindcss-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=Appwrite&logoColor=black" alt="appwrite" />
+  </div>
+  <h3 align="center">Horizon - A Fintech Bank Application</h3>
 
-## Getting Started
+   <div align="center">
+        Horizon is a modern, secure, and user-friendly financial management application built with Next.js, leveraging cutting-edge technologies to provide a seamless banking experience.
+    </div>
+</div>
 
-First, run the development server:
+## 📋 Table of Contents
+
+1. 🍁 [Introduction](#-introduction)
+2. ⚙️ [Tech Stack](#️-tech-stack)
+3. 🕸️ [Features](#️-features)
+4. 🤸 [Quick Start](#-getting-started)
+5. 📂 [Project Structure](#-project-structure)
+6. 🔭 [Deployment](#-deployment)
+7. ⚠️ [Error Monitoring](#️-error-monitoring)
+8. 🔗 [Assets](#-assets)
+9. 🤝 [Contributing](#-contributing)
+10. 📄 [License](#-license)
+
+## 🍁 Introduction
+
+Horizon is a online banking application built with Next.js, React, TaildwindCSS, Appwrite, Plaid & Dwolla that provides users with a secure and convenient way to manage their finances on the go. Key features include account management, bill pay, money transfers, budgeting tools and more. The app is designed to be fast, responsive and accessible across all devices.
+The goal of Horizon is to simplify personal finance management with an intuitive interface and seamless user experience. Modern banking functionality is made accessible through a minimal yet powerful feature set. Data security and privacy are top priorities, with credentials and transactions fully encrypted on the backend.
+
+## ⚙️ Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Appwrite (Backend as a Service)
+- React Hook Form (Form Management)
+- Zod (Input Validation)
+- Chart.js (Graphs and Charts)
+- ShadCN (Components library)
+- Plaid API (Financial data aggregation)
+- Dwolla API (Payment processing)
+- Sentry (Error tracking and performance monitoring)
+
+## 🕸️ Features
+
+- User authentication and account management
+- Bank account integration using Plaid
+- Real-time transaction tracking and categorization
+- Fund transfers between linked accounts
+- Detailed financial insights and analytics
+- Secure payment processing with Dwolla integration
+- Responsive design for desktop and mobile devices
+
+## 🤸 Getting Started
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/) - for version control
+- [Node.js](https://nodejs.org/en/) - for running JavaScript on the server
+- [npm](https://www.npmjs.com/) - Node Package Manager
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/laxman-rathod/Horizon-Banking-App.git
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+
+```
+
+3. **Set up environment variables:**
+
+Create a `.env.local` file in the root directory and add the necessary environment variables (refer to `.env.example` for required variables).
+
+```bash
+#NEXT
+NEXT_PUBLIC_SITE_URL=http://localhost:300
+
+#APPWRITE
+NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+NEXT_PUBLIC_APPWRITE_PROJECT=
+APPWRITE_DATABASE_ID=
+APPWRITE_USER_COLLECTION_ID=
+APPWRITE_BANK_COLLECTION_ID=
+APPWRITE_TRANSACTION_COLLECTION_ID=
+APPWRITE_SECRET=
+
+#PLAID
+PLAID_CLIENT_ID=
+PLAID_SECRET=
+PLAID_ENV=
+PLAID_PRODUCTS=
+PLAID_COUNTRY_CODES=
+
+#DWOLLA
+DWOLLA_KEY=
+DWOLLA_SECRET=
+DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+DWOLLA_ENV=sandbox
+
+```
+
+Replace the placeholder values with your actual respective account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io/), [Plaid](https://plaid.com/) and [Dwolla](https://dwolla.com/)
+
+4. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `app/`: Next.js app router and page components
+- `components/`: Reusable React components
+- `lib/`: Utility functions and API clients
+- `constants/`: Application-wide constants
+- `public/`: Static assets
+- `type/`: TypeScript types
 
-## Learn More
+## 🔭 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The app is configured for easy deployment on `Vercel`. Connect your `GitHub repository` to Vercel for automatic deployments on each push to the main branch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚠️ Error Monitoring
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`Sentry` is integrated for error tracking and performance monitoring. Configure your Sentry DSN in the `sentry.*.config.ts` files.
 
-## Deploy on Vercel
+## 🔗 Assets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Static assets like images, fonts etc. are stored in the `public` directory and referenced using the `/` path prefix.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+To contribute:
+
+Fork the repository
+Create your feature branch (`git checkout -b feature/your-feature`)
+Commit your changes (`git commit -m 'feat: add your feature'`)
+Push to the branch (`git push origin feature/your-feature`)
+Open a pull request
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
