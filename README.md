@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://miro-clone-w.vercel.app" target="_blank">
-      <img src="" alt="Project Banner">
+      <img src="https://github.com/laxman-rathod/Horizon-Banking-App/blob/main/public/horizon-homepage.png" alt="Project Banner">
     </a>
   <br />
   <div>
